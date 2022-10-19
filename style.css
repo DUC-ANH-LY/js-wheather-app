@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #222;
+  font-family: "Roboto", sans-serif;
+  background-image: url("https://source.unsplash.com/random");
+  font-size: 120%;
+}
+
+.card {
+  background-color: black;
+  color: white;
+  padding: 50px;
+  border-radius: 20px;
+  max-width: 400px;
+  width: 100%;
+  margin: 25px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  margin: 5px;
+  border-radius: 50%;
+  border: none;
+  width: 40px;
+  height: 40px;
+  outline: none;
+  background-color: #7c7c7c2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+button:hover {
+  background-color: #7c7c7c6b;
+}
+.search-bar {
+  outline: none;
+  border: none;
+  padding: 7px;
+  /* margin: 0px 1px; */
+  border-radius: 20px;
+  background-color: #7c7c7c2b;
+  color: white;
+  font-size: 120%;
+  font-family: inherit;
+  width: 100%;
+}
+.temp {
+  margin: 10px auto;
+  font-size: 50px;
+}
+.wheather {
+  margin: 30px 0;
+}
+.text {
+  text-transform: capitalize;
+
+  margin-left: 30px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.wheather.loading {
+  visibility: hidden;
+  max-height: 20px;
+}
+.loading:after{
+    visibility: visible;
+    content: "Loading....";
+    color:white;
+}
